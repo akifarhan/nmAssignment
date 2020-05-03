@@ -99,7 +99,7 @@ def findnewX(j):
     print("Location ",j)
     try:
         print("Value of X at that location:", newX)
-        
+
         return newX
     except:
         print("Value of X at that location:", x[int(j)])
@@ -136,7 +136,7 @@ while True:
     print(f"Excecution Time: {time.time()-start_time} seconds ")
     test1 = ''.join(formula).replace('(','*(').replace('x','a').replace('c*','c')
     print(' ')
-    # expression to be evaluated 
+    # expression to be evaluated
     expr = test1
     while True:
         # variable used in expression
@@ -162,12 +162,12 @@ while True:
             except:
                 a = frac(a).limit_denominator()
 
-        # evaluating expression 
+        # evaluating expression
         Y = eval(expr)
 
         print('Y =', Y)
-        
-        ans = input("Do you want to test with other value of x? y/n : ")
+
+        ans = input("Do you want to test with other value of x or other location of x? y/n : ")
         if ans =='y':
             continue
         else:
