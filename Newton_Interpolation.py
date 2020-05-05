@@ -158,11 +158,12 @@ while True:
     y = []
 
     ## GET Input
-    print("Enter the values of x: (eg: 1 1/2 3 5 7)")
-    x = [i for i in input().split()]
-
-    print("Enter the values of y: (eg: 3 -10 2 3/2 1)")
-    y = [i for i in input().split()]
+    print("Enter the values of x: (eg: 1,1/2,3,5,7)")
+    x = [i for i in input().split(",")]
+    print(x)
+    print("Enter the values of y: (eg: 3,-10,2,3/2,1)")
+    y = [i for i in input().split(",")]
+    print(y)
 
     ## Change input to ArrayType
     x = np.array(changeArrayType(x))
